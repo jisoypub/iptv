@@ -1,0 +1,135 @@
+{
+    "privateKey": "404",
+    "tvSources": [
+        {
+            "name": "IPTV 1 [IPV6]",
+            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/main/ipv6.m3u",
+            "block": false
+        },
+        {
+            "name": "IPTV 2 [IPV4]",
+            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/main/ipv4.m3u",
+            "block": false
+        }
+    ],
+    "sources": [
+        {
+            "name": "非凡资源",
+            "url": "http://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/",
+            "playerName": {
+                "ffm3u8": "非凡"
+            },
+            "blockTypeIds": [
+                34
+            ],
+            "blockAdsRule": [
+                "#EXT-X-DISCONTINUITY[\\r\\n]+(?:#EXTINF:(?:4\\.666667|5\\.433333|3\\.333333|3\\.900000|3\\.233333),[\\r\\n]+.*?[\\r\\n]+){5}#EXT-X-DISCONTINUITY"
+            ],
+            "desc": ""
+        },
+        {
+            "name": "量子资源",
+            "url": "http://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/",
+            "playerName": {
+                "lzm3u8": "量子"
+            },
+            "blockTypeIds": [
+                34,
+                41,
+                42,
+                43,
+                44
+            ],
+            "blockAdsRule": [],
+            "desc": "资源较全"
+        },
+        {
+            "name": "暴风资源",
+            "url": "https://bfzyapi.com/api.php/provide/vod/",
+            "playerName": {
+                "bfzym3u8": "暴风"
+            },
+            "blockTypeIds": [
+                29,
+                73
+            ],
+            "blockAdsRule": [],
+            "desc": "资源较全"
+        },
+        {
+            "name": "华为吧",
+            "url": "https://cjhwba.com/api.php/provide/vod/",
+            "playerName": {
+                "hw8": "华为吧"
+            },
+            "blockTypeIds": [
+                58
+            ],
+            "blockAdsRule": [],
+            "desc": ""
+        },
+        {
+            "name": "黑木耳资源",
+            "url": "https://json02.heimuer.xyz/api.php/provide/vod/",
+            "playerName": {
+                "heimuer": "黑木耳"
+            },
+            "blockTypeIds": [
+                34
+            ],
+            "blockAdsRule": [
+                "#EXT-X-DISCONTINUITY\\n#EXTINF:\\d+\\.\\d+,\\n.*?\\n#EXT-X-DISCONTINUITY"
+            ],
+            "desc": ""
+        },
+        {
+            "name": "卧龙资源",
+            "url": "https://collect.wolongzy.cc/api.php/provide/vod/",
+            "playerName": {
+                "wolong": "卧龙"
+            },
+            "blockTypeIds": [
+                49
+            ],
+            "blockAdsRule": [],
+            "desc": "资源较全 广告较多"
+        },
+        {
+            "name": "1080zyku",
+            "url": "https://api.1080zyku.com/inc/api_mac10.php/",
+            "playerName": {
+                "1080zyk": "1080zyku"
+            },
+            "blockTypeIds": [
+                19
+            ],
+            "blockAdsRule": [
+                "#EXTINF:6\\.600000[\\s\\S]*?#EXTINF:5\\.600000,[\\r\\n]+.*"
+            ],
+            "desc": "该源不支持搜索"
+        },
+        {
+            "name": "Ikun资源",
+            "url": "https://ikunzyapi.com/api.php/provide/vod/",
+            "playerName": {
+                "ikm3u8": "Ikun"
+            },
+            "blockTypeIds": [
+                5,
+                56
+            ],
+            "blockAdsRule": [],
+            "desc": ""
+        },
+        {
+            "name": "旺旺短剧",
+            "url": "https://api.wwzy.tv/api.php/provide/vod/",
+            "playerName": {
+                "wwm3u8": "旺旺"
+            },
+            "blockTypeIds": [],
+            "blockAdsRule": [],
+            "desc": "短剧资源"
+        }
+    ]
+}
