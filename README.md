@@ -5,6 +5,8 @@ IPTV直播源 M3U格式
 
 使用方法参考 https://docs.mac-cms.com/  
 
+空壳影视App下载:https://files.mac-cms.com/app-release.apk  
+
 
 ##  
 
