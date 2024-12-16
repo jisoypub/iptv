@@ -3,12 +3,22 @@
     "tvSources": [
         {
             "name": "IPTV 1 [IPV6]",
-            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/main/ipv6.m3u",
+            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/cuikaipeng/IPTV/refs/heads/main/IPTV.m3u",
             "block": false
         },
         {
             "name": "IPTV 2 [IPV4]",
-            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/main/ipv4.m3u",
+            "m3uUrl": "https://live.zhoujie218.top/tv/iptv4.m3u",
+            "block": false
+        },
+        {
+            "name": "IPTV 3",
+            "m3uUrl": "https://ghp.ci/https://raw.githubusercontent.com/vicjl/myIPTV/refs/heads/main/IPTV-all.m3u",
+            "block": true
+        },
+        {
+            "name": "广播电台",
+            "m3uUrl": "https://live.fanmingming.com/radio/m3u/index.m3u",
             "block": false
         }
     ],
@@ -23,7 +33,8 @@
                 34
             ],
             "blockAdsRule": [
-                "#EXT-X-DISCONTINUITY[\\r\\n]+(?:#EXTINF:(?:4\\.666667|5\\.433333|3\\.333333|3\\.900000|3\\.233333),[\\r\\n]+.*?[\\r\\n]+){5}#EXT-X-DISCONTINUITY"
+                "#EXT-X-DISCONTINUITY[\\r\\n]+(?:#EXTINF:(?:4\\.666667|5\\.433333|3\\.333333|3\\.900000|3\\.233333),[\\r\\n]+.*?[\\r\\n]+){5}#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY[\\r\\n]+(?:#EXTINF:(?:6\\.466667|1\\.833333|6\\.666667|3\\.033333),[\\r\\n]+.*?[\\r\\n]+){4}#EXT-X-DISCONTINUITY"
             ],
             "desc": ""
         },
@@ -41,7 +52,7 @@
                 44
             ],
             "blockAdsRule": [],
-            "desc": "资源较全"
+            "desc": "资源较全,但接口较慢"
         },
         {
             "name": "暴风资源",
